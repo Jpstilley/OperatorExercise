@@ -24,13 +24,13 @@ namespace OperatorExercise
 
             //Exercise 2
 
-            Console.WriteLine("Please enter a whole number");
+            Console.WriteLine("What is the radius of your circle");
 
             int userInput = Convert.ToInt32(Console.ReadLine());
 
             double result = AreaOfCircle(userInput);
 
-            Console.WriteLine($"The area of your circle is {result}.");
+            Console.WriteLine($"The area of a circle with a radius of {userInput} is {result}.");
 
 
         }
