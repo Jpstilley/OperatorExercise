@@ -26,18 +26,18 @@ namespace OperatorExercise
 
             Console.WriteLine("What is the radius of your circle");
 
-            int userInput = Convert.ToInt32(Console.ReadLine());
+            var radius = double.Parse(Console.ReadLine());
 
-            double result = AreaOfCircle(userInput);
+            double result = AreaOfCircle(radius);
 
-            Console.WriteLine($"The area of a circle with a radius of {userInput} is {result}.");
+            Console.WriteLine($"The area of a circle with a radius of {radius} is {result}.");
 
 
         }
 
-        public static double AreaOfCircle(int r)
+        public static double AreaOfCircle(double r)
         {
-            double calculatedCircle = Math.PI * (r ^ 2);
+            double calculatedCircle = Math.PI * Math.Pow(r, 2);
             return calculatedCircle;
         }
     }
